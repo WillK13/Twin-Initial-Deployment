@@ -1,7 +1,7 @@
 import { type Theme } from "../hooks/useTheme";
 
 export const defaultTheme: Theme = {
-  //palette: {
+  palette: {
     text: {
       font: {
         default: "font-[Public_Sans]",
@@ -32,7 +32,7 @@ export const defaultTheme: Theme = {
       success: "bg-[#4CAF50]",
       error: "bg-[#F44336]",
     },
-  //},
+  },
   color: {
     text: {
       default: "text-[#F5F6FA]",
