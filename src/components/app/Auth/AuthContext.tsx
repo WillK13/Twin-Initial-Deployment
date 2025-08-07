@@ -46,7 +46,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const loginWithGoogle = () => {
   if (window.google) {
-    google.accounts.id.initialize({
+    window.google.accounts.id.initialize({
       client_id: clientID,
       callback: async (response: any) => {
         const res = await fetch('http://localhost:8000/auth/google', {
@@ -67,11 +67,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       },
     });
 
-    google.accounts.id.prompt();
+    window.google.accounts.id.prompt();
   } else {
     console.error("Google script not loaded.");
   }
-}
+};
+
 
   const logout = async () => {
     setUser(null);
