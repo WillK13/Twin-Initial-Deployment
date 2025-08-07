@@ -9,14 +9,14 @@ import Image from "../components/ui/Image";
 import { Flex } from "../components/layout/Flex";
 import { useState, useRef } from "react";
 import "../index.css"
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { useAuth } from "../components/app/Auth/AuthContext";
 export default function Record() {
   const [midiConnected, setMidiConnected] = useState(false);
   const socketRef = useRef<WebSocket | null>(null);
   const[isRecording, setIsRecording] = useState(false);
   const isRecordingRef = useRef(false);
-  const { isAuthenticated } = useAuth();
+  //const { isAuthenticated } = useAuth();
 
   const handleRecord = async (e: React.MouseEvent<HTMLButtonElement>) => {
   e.preventDefault();
@@ -47,7 +47,7 @@ export default function Record() {
        socketRef.current = socket;
        const midiAccess = await navigator.requestMIDIAccess(); 
     console.log("pooooop");
-    for (let input of midiAccess.inputs.values()) {
+    for (const input of Array.from(midiAccess.inputs.values())) {
         input.onmidimessage = (msg) => {
           const [status, data1, data2] = msg.data;
           //Filter out the connection noise
@@ -199,7 +199,7 @@ export default function Record() {
                     {trackPairs.map((track, i) => (
                     <Flex key={track.id}  direction="column" gap="xs" className="w-full">
                         <FormRow>
-                          <Image src="Souncloudx.png" className="w-4 h-4 mr-1 mt-1"/>
+                          <Image src="Souncloudx.png" alt="SoundCloud icon" className="w-4 h-4 mr-1 mt-1"/>
                         <TextInput
                             key={track.id}
                             label={`Track ${trackPairs.indexOf(track) + 1}`}

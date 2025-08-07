@@ -58,7 +58,7 @@ type PostWithSongs = {
 export default function Profile() {
   const { userID } = useParams<{userID: string}>();
   const [user, setUser] = useState<User | null>(null);
-  const [posts, setPosts] = useState<Post[]>([]);
+  //const [posts, setPosts] = useState<Post[]>([]);
   const [PostWithSongs, setPostWithSongs] = useState<PostWithSongs[]>([]);
 
 
