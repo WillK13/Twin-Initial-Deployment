@@ -10,7 +10,7 @@ export interface TransitionProps {
   songs: {
     album_cover_img_url: string;
     title: string;
-    RealName: string;
+    RealName?: string;
   }[];
   userAvatarSrc: string;
   userName: string;
