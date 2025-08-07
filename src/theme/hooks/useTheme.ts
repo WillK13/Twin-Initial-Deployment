@@ -26,11 +26,11 @@ export type Theme = {
       },
     },
     background: {
-      dark: string;
-      dimmed: string;
-      light: string;
-      success: string;
-      error: string;
+      dark: string,
+      dimmed: string,
+      light: string,
+      success: string,
+      error: string,
     },
   },
   color: {
@@ -57,13 +57,13 @@ export type Theme = {
     xl: string,
   },
   animation: {
-    quick: string;
-    standard: string;
-    slow: string;
+    quick: string,
+    standard: string,
+    slow: string,
   },
   shadow: {
-    glow: string;
-    levitate: string;
+    glow: string,
+    levitate: string,
   },
 };
 
