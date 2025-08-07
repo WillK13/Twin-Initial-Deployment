@@ -31,7 +31,7 @@ export type Theme = {
       light: string;
       success: string;
       error: string;
-    };
+    },
   },
   color: {
     text: {
@@ -43,28 +43,28 @@ export type Theme = {
   border: {
     dimmed: string;
     light: string;
-  };
+  },
   radius: {
     sm: string,
     md: string,
     lg: string,
     round: string,
-  };
+  },
   padding: {
     sm: string,
     md: string,
     lg: string,
     xl: string,
-  };
+  },
   animation: {
     quick: string;
     standard: string;
     slow: string;
-  };
+  },
   shadow: {
     glow: string;
     levitate: string;
-  };
+  },
 };
 
 type ThemeContextType = {
