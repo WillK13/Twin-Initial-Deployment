@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../components/ui/Icon";
 
 export function Skip10Icon({ color = "currentColor", size = 24, ...props }) {

@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../components/ui/Icon";
 
 export function SettingsIcon({ color = "currentColor", size = 24, ...props }) {

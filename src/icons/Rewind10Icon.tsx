@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../components/ui/Icon";
 
 export function Rewind10Icon({ color = "currentColor", size = 24, ...props }) {
