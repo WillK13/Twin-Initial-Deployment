@@ -25,7 +25,7 @@ export const defaultTheme: Theme = {
         bold: "font-bold",
       },
     },
-  background: {
+    background: {
       dark: "bg-[#05070A]",
       dimmed: "bg-[#343B4C]",
       light: "bg-[#F5F6FA]",
