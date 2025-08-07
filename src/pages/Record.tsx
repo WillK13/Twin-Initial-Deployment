@@ -10,7 +10,7 @@ import { Flex } from "../components/layout/Flex";
 import { useState, useRef } from "react";
 import "../index.css"
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../components/app/auth/AuthContext";
+import { useAuth } from "../components/app/Auth/AuthContext";
 export default function Record() {
   const [midiConnected, setMidiConnected] = useState(false);
   const socketRef = useRef<WebSocket | null>(null);

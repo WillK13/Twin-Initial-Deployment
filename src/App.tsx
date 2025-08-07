@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Record from "./pages/Record";
 import Login from "./pages/Login";
 import Profile from "./pages/profile/Profile";
-import { AuthProvider } from "./components/app/auth/AuthContext";
+import { AuthProvider } from "./components/app/Auth/AuthContext";
 export default function App() {
   return (
     <AuthProvider>

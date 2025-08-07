@@ -10,7 +10,7 @@ import { ProfileIcon } from "./icons/ProfileIcon";
 import { RecordIcon } from "./icons/RecordIcon";
 import { SettingsIcon } from "./icons/SettingsIcon";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "./components/app/auth/AuthContext";
+import { useAuth } from "./components/app/Auth/AuthContext";
 interface AppShellProps {
   children: React.ReactNode;
 }

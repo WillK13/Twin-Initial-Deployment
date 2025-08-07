@@ -1,7 +1,7 @@
 import { Flex } from "../components/layout/Flex";
 import { Text } from "../components/ui/Text";
 import Button from "../components/ui/Button";
-import { useAuth } from "../components/app/auth/AuthContext";
+import { useAuth } from "../components/app/Auth/AuthContext";
 
 export default function Login() {
   const { loginWithGoogle, isAuthenticated, user, logout } = useAuth();
