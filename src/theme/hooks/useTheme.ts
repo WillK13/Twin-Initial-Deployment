@@ -3,17 +3,54 @@ import { createContext, useContext } from "react";
 export type Theme = {
   palette: {
     text: {
-      default: "#F5F6FA";
-      dimmed: "#8B93A8";
-      dark: "#212732";
+      font: {
+        default: string,
+        header: string,
+      },
+      size: {
+        h1: string,
+        h2: string,
+        h3: string,
+        h4: string,
+        h5: string,
+        h6: string,
+        p: string,
+        span: string,
+        caption: string,
+      },
+      weight: {
+        thin: string,
+        light: string,
+        default: string,
+        bold: string,
+      },
     };
     background: {
-      dark: "#05070A";
-      dimmed: "#343B4C";
-      light: "#F5F6FA";
-      success: "#4CAF50";
-      error: "#F44336";
+      dark: string;
+      dimmed: string;
+      light: string;
+      success: string;
+      error: string;
     };
+  };
+  radius: {
+    sm: string,
+    md: string,
+    lg: string,
+    round: string,
+  };
+  color: {
+    text: {
+      default: string,
+      dimmed: string,
+      dark: string,
+    },
+  },
+  padding: {
+    sm: string,
+    md: string,
+    lg: string,
+    xl: string,
   };
   border: {
     dimmed: string;
