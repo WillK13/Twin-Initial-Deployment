@@ -6,14 +6,14 @@ import { Text } from "../../../components/ui/Text";
 type ProfileCardProps = {
   name: string;
   avatarSrc: string;
-  //followerCount: string;
+  followerCount?: string;
   onFollow?: () => void;
 };
 
 export function ProfileCard({
   name,
   avatarSrc,
-  //followerCount,
+  followerCount,
 }: ProfileCardProps) {
   return (
     <Flex

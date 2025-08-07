@@ -25,6 +25,13 @@ const buttonVariants = cva("hover:cursor-pointer", {
         "hover:bg-subtitle",
         "hover:text-light",
       ].join(" "),
+      tertiary: [
+        "bg-transparent",
+        "text-white",
+        "hover:bg-white/10",
+        "transition-all",
+        "duration-150",
+      ].join(" "),
       disabled: ["bg-primary", "text-subtitle", "hover:cursor-not-alowed", "opacity-50"],
     },
     width: {
