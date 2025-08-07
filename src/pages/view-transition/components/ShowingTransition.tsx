@@ -11,6 +11,7 @@ import {
 type ArtistInfo = {
   name: string;
   imageSrc: string;
+  RealName?: string;
 };
 
 type ShowingTransitionProps = {
