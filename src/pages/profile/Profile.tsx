@@ -151,6 +151,7 @@ export default function Profile() {
               (PostWithSongs.map(({post, songs}) => (
                 <Transition
                   key={post.id}
+                  postID={post.id}
                   songs={songs}
                   userAvatarSrc={user?.profile_img_url || "/default-avatar.jpg"}
                   userName={`${user.nickname}`}

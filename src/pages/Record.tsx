@@ -47,7 +47,8 @@ export default function Record() {
        socketRef.current = socket;
        const midiAccess = await navigator.requestMIDIAccess(); 
     console.log("pooooop");
-    for (const input of Array.from(midiAccess.inputs.values())) {
+    const inputs = Array.from(midiAccess.inputs?.values() || []);
+    for (const input of inputs) {
         input.onmidimessage = (msg) => {
           const [status, data1, data2] = msg.data;
           //Filter out the connection noise
