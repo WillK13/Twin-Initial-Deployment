@@ -30,14 +30,14 @@ export default function Transition({
   comments,
   shares,
 }: TransitionProps) {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
   const songPairs = [];
   for(let i = 0; i < songs.length; i += 2) {
     songPairs.push(songs.slice(i, i + 2));
   }
   const coverSize = songs.length > 2 ? "sm" : "md";
   return (
-    <Widget className="group hover:cursor-pointer" height="full" variant="md">
+    <Widget className="group hover:cursor-pointer" height="screen" variant="md">
       <Link 
         to={`/posts/${postID}`}
         state={{
