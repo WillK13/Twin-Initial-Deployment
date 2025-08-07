@@ -7,7 +7,7 @@ import { Text } from "../../../ui/Text";
 type ArtistInfoProps = {
   name: string;
   imageSrc: string;
-  RealName: string;
+  RealName?: string;
 };
 
 type PlayerHeaderProps = {

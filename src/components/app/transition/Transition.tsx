@@ -3,7 +3,7 @@ import { Flex } from "../../layout/Flex";
 import { TransitionCover } from "./components/TransitionCover";
 import { TransitionMeta } from "./components/TransitionMeta";
 import { TransitionActions } from "./components/TransitionActions";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 export interface TransitionProps {
   postID: number;
