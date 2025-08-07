@@ -37,7 +37,7 @@ export default function Transition({
   }
   const coverSize = songs.length > 2 ? "sm" : "md";
   return (
-    <Widget className="group hover:cursor-pointer" height="screen" variant="md">
+    <Widget className="group hover:cursor-pointer" height="full" variant="md">
       <Link 
         to={`/posts/${postID}`}
         state={{
