@@ -75,8 +75,8 @@ export default function AppShell({ children }: AppShellProps) {
               orientation="horizontal"
               buttons={[
                 {
-                  children: (
-                    <Text variant="caption" color="white" font="default">
+                  children: ( // Used to be white
+                    <Text variant="caption" color="default" font="default">
                       Logout
                     </Text>
                   ),

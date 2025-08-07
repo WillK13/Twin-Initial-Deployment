@@ -13,7 +13,7 @@ type ProfileCardProps = {
 export function ProfileCard({
   name,
   avatarSrc,
-  followerCount,
+  //followerCount,
 }: ProfileCardProps) {
   return (
     <Flex
