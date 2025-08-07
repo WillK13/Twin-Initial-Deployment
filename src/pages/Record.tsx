@@ -50,7 +50,12 @@ export default function Record() {
     const inputs = Array.from(midiAccess.inputs?.values() || []);
     for (const input of inputs) {
         input.onmidimessage = (msg) => {
-          const [status, data1, data2] = msg.data;
+          const data = msg.data as Uint8Array | null;
+          if (!data || data.length < 3) return; // guard for TS + safety
+
+          const status = data[0];
+          const data1 = data[1];
+          const data2 = data[2];
           //Filter out the connection noise
 
           if (status === 248) return;
