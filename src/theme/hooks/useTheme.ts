@@ -32,13 +32,7 @@ export type Theme = {
       success: string;
       error: string;
     };
-  };
-  radius: {
-    sm: string,
-    md: string,
-    lg: string,
-    round: string,
-  };
+  },
   color: {
     text: {
       default: string,
@@ -46,15 +40,21 @@ export type Theme = {
       dark: string,
     },
   },
+  border: {
+    dimmed: string;
+    light: string;
+  };
+  radius: {
+    sm: string,
+    md: string,
+    lg: string,
+    round: string,
+  };
   padding: {
     sm: string,
     md: string,
     lg: string,
     xl: string,
-  };
-  border: {
-    dimmed: string;
-    light: string;
   };
   animation: {
     quick: string;
