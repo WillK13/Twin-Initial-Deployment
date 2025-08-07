@@ -12,6 +12,9 @@ export default function ViewTransition() {
   const state = location.state || {};
   const song1 = state.songs?.[0];
   const song2 = state.songs?.[1];
+  if (!song1 || !song2) {
+  console.log("POOOOOOOP");
+  }
   const [visualize, setVisualize] = useState(false);
   // state={{
   //         songs,
