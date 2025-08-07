@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 export type Theme = {
-  palette: {
+  //palette: {
     text: {
       font: {
         default: string,
@@ -32,7 +32,7 @@ export type Theme = {
       success: string,
       error: string,
     },
-  },
+  //},
   color: {
     text: {
       default: string,
