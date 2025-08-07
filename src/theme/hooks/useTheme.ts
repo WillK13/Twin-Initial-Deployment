@@ -24,7 +24,7 @@ export type Theme = {
         default: string,
         bold: string,
       },
-    };
+    },
     background: {
       dark: string;
       dimmed: string;
